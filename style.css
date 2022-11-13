@@ -655,6 +655,11 @@ body {
 .mb-20{
 	margin-bottom: 20px;
 }
+.dfx{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .button {
 	border-radius: 5px;
 	border: none;
@@ -806,6 +811,9 @@ body {
 		font-size: 20px;
 		line-height: 24px;
 	}
+	.swiper img{
+		max-width: 110px;
+	}
 	.global-team{
 		margin-top: 65px;
 	}
@@ -888,6 +896,9 @@ body {
 	}
 	.howit .steps{
 		margin-bottom: 35px;
+	}
+	.swiper{
+		margin-top: 54px;
 	}
 	.step-count{
 		order: -1;
