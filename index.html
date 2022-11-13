@@ -130,8 +130,8 @@
 				<button class="btn mobile-button btn-color d-block d-lg-none">Find out more</button>
 			</div>
 		</section>
-		<!-- 
-		<section class="section feedback">
+		
+		<section class="section feedback d-none d-lg-block">
 			<div class=" main-container">
 				<div class="feedback-header mb-lg-48">Let’s disscus your project</div>
 				<form action="">
@@ -153,6 +153,7 @@
 				</form>
 			</div>
 		</section>
+		
 		<section class="section clients">
 			<div class="main-container">
 				<h2 class="section-title mb-120">Clients</h2>
@@ -180,20 +181,21 @@
 						<div class="trust-desc">Trusted by Global Brands</div>
 					</div>
 					<div class="client-items">
-						<div class="client"><img src="./assets/images/Leoni-logo.png" alt="Leoni"></div>
-						<div class="client"><img src="./assets/images/Ford-logo.png" alt="Ford-logo"></div>
-						<div class="client"><img src="./assets/images/Haier-logo.png" alt="Haier-logo"></div>
+						<div class="client d-none d-lg-block"><img src="./assets/images/Leoni-logo.png" alt="Leoni"></div>
+						<div class="client d-none d-lg-block"><img src="./assets/images/Ford-logo.png" alt="Ford-logo"></div>
+						<div class="client "><img src="./assets/images/Haier-logo.png" alt="Haier-logo"></div>
 					</div>
 				</div>
 			</div>
 		</section>
+		
 		<section class="section global-team">
 			<div class="main-container">
 				<h2 class="section-title mb-60">Global team</h2>
 				<div class="offices">
 					<div class="offices-countries">
 						<div class="mb-lg-56">Worldwide offices</div>
-						<div class="row align-items-center">
+						<div class="row align-items-center d-none d-lg-block">
 							<div class="col-auto df fdc">
 								<div class="mb-60">TAJIKISTAN</div>
 								<div class="mb-60">ARMENIA</div>
@@ -209,8 +211,12 @@
 								<div class="mb-60">Miami</div>
 							</div>
 						</div>
+
 					</div>
-					<div class="map"><img src="./assets/images/Interactive-map.png" alt="Interactive-map"></div>
+					<div class="map">
+						<img src="./assets/images/Interactive-map.png" class="d-none d-lg-block" alt="Interactive-map">
+						<img src="./assets/images/world-map.png" class="d-block d-lg-none" alt="Interactive-map">
+					</div>
 				</div>
 				<div class="projects">
 					<div class="projects-header">Worldwide projects</div>
@@ -227,13 +233,15 @@
 							<div class="project-item__header">MAVENIR</div>
 							<div class="project-item__desc">Set of products for acision and curtomer service interface </div>
 						</div>
-						<button class="btn-more secondary-color"><span>More <br>projects</span>
-						<img src="./assets/svg/arrow.svg" class="arrow-icon" alt="">
+						<button class="btn-more secondary-color"><span>More projects</span>
+						<img src="./assets/svg/arrow.svg" class="arrow-icon d-none d-lg-block" alt="">
+						<img src="./assets/svg/arrow-icon-2.svg" class="arrow-icon d-block d-lg-none" alt="">
 						</button>
 					</div>
 				</div>
 			</div>
 		</section>
+		<!-- 
 		<section class="section howit">
 			<div class="main-container">
 				<h2 class="section-title mb-120">How it works <br> Easy 3 step process</h2>

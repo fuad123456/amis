@@ -777,6 +777,94 @@ body {
 	font-size: 24px;
 	line-height: 29px;
 	}
+	.clients{
+		margin-top: 78px;
+	}
+
+	.clients .section-title.mb-120{
+		margin-bottom: 45px;
+	}
+	.advantage{
+		row-gap:12px;
+	}
+	.advantage-item{
+		max-width: 120px;
+	}
+	.advantage-amount{
+		font-weight: 900;
+		font-size: 32px;
+		line-height: 39px;
+	}
+	.advantage-desc{
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.clients-block{
+		margin-top: 54px;
+	}
+	.clients-block img{
+		width: 70px;
+	}
+	.trust-desc{
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.global-team{
+		margin-top: 65px;
+	}
+	.global-team .section-title.mb-60{
+		margin-bottom: 45px;
+	}
+	.offices{
+		flex-direction: column;
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.offices .offices-countries .mb-lg-56{
+		margin-bottom: 35px;
+	}
+	.project-items{
+		flex-wrap: wrap;
+		gap: 7px;
+	}
+	.project-item__header{
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.project-item{
+
+		padding:7px;
+		max-width:150px;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 13px;
+		max-height: 90px;
+	}
+	.project-item__desc{
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 13px;
+	}
+	.project-items button{
+		width:150px;
+		max-height: 90px;
+		font-weight: 500;
+		font-size: 10px;
+		line-height: 12px;
+	}
+	.arrow-icon{
+		margin-top: 10px;
+	}
+	.btn-more{
+		padding: 28px 30px;
+	}
+	.map{
+		margin-bottom: 35px;
+	}
 	.mb-lg-56{
 		margin-bottom: 0;
 	}
