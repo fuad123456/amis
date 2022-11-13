@@ -1,0 +1,13 @@
+<svg width="102" height="100" viewBox="0 0 102 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M78.5 67V88" stroke="#151E42" stroke-width="2"/>
+<path d="M18 30V16.5L32.5 14V27.5" stroke="#151E42" stroke-width="2"/>
+<circle cx="24" cy="24" r="23" stroke="#151E42" stroke-width="2"/>
+<circle cx="78" cy="24" r="23" stroke="#151E42" stroke-width="2"/>
+<circle cx="78" cy="76" r="23" stroke="#151E42" stroke-width="2"/>
+<circle cx="24" cy="76" r="23" stroke="#151E42" stroke-width="2"/>
+<path d="M18.9111 31.4809C19.1514 32.5517 18.2498 34.0307 16.3224 34.4631C14.3949 34.8956 12.9479 33.9436 12.7077 32.8729C12.4674 31.8021 13.3689 30.3232 15.2964 29.8907C17.2239 29.4582 18.6709 30.4102 18.9111 31.4809Z" stroke="#151E42" stroke-width="2"/>
+<path d="M32.9111 28.4809C33.1514 29.5517 32.2498 31.0307 30.3224 31.4631C28.3949 31.8956 26.9479 30.9436 26.7077 29.8729C26.4674 28.8021 27.3689 27.3232 29.2964 26.8907C31.2239 26.4582 32.6709 27.4102 32.9111 28.4809Z" stroke="#151E42" stroke-width="2"/>
+<path d="M72 33.5L71.5 14L90.5 24L72 33.5Z" stroke="#151E42" stroke-width="2"/>
+<path d="M19 69.5L12 82L37.5 82.5L27.5 64.5L22.5 75L19 69.5Z" stroke="#151E42" stroke-width="2"/>
+<path d="M68.5 69.5V66.5L87.5 67V69.5" stroke="#151E42" stroke-width="2"/>
+</svg>
