@@ -654,7 +654,12 @@ body {
 	padding: 0;
 	margin: 0;
 }
-
+.bgcw{
+	background-color: #fff;
+}
+.zi-100{
+	z-index: 100;
+}
 .mla {
 	margin-left: auto;
 }
@@ -708,6 +713,9 @@ body {
 .arrow-icon{
 	margin-top: 20px;
 }
+.btn-outline{
+	border: 1px solid #151E42;
+}
 /* ////////////////////////////ADAPTIVE */
 .navbar-expand-lg .navbar-nav{
 	width:100%;
@@ -739,6 +747,11 @@ body {
 
 }
 @media (min-width:320px) and (max-width:760px) {
+	.nav-item a{
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 65px;
+	}
 	.main-container{
 		max-width:100%;
 		padding: 0 30px;
