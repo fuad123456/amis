@@ -19,24 +19,6 @@
 <body>
 
 	<header class="header">
-		<!-- <div class="container main-container">
-			<div class="header-container">
-				<div class="logo">
-					<img src="assets/svg/logo-light.png" alt="logo">
-				</div>
-				<nav>
-					<ul class="nav nav-list">
-						<li class="nav-list__item"><a class="nav-list__link" href="#">about us</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">services</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">projects</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">careers</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">blog</a></li>
-					</ul>
-				</nav>
-				<div class="btn-contact"><button class="btn btn-outline me-2">CONTACT</button></div>
-			</div>
-		</div> -->
-		<!-- <div class="container"> -->
 		<nav class="navbar navbar-expand-lg bg-light">
 			<div class="container center main-container">
 				<a class="navbar-brand mr-64" href="#">
@@ -80,8 +62,40 @@
 						<div class="main-blok">
 							<h1 class="main-section-title">Custom Software<br> Developer</h1>
 							<p class="section-desc ">We feel the needs of your business</p>
-							<button class="btn btn-color d-none d-lg-block">GET STARTED</button>
+							<!-- <button class="btn btn-color d-none d-lg-block">GET STARTED</button> -->
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">GET STARTED</button>
+
 							<button class="btn mobile-button btn-color d-block d-lg-none">Share you ideas</button>
+							<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								<div class="modal-dialog">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h1 class="modal-title fs-5" id="exampleModalLabel">CONTACT US WITH YOUR IDEAS</h1>
+									  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+									  <form>
+										<div class="mb-3">
+										  <input type="text" class="modal-input" id="recipient-name"
+										  placeholder="Name">
+										</div>
+										<div class="mb-3">
+											<input type="email" class="modal-input" id="recipient-name1" placeholder="Email">
+										</div>
+										<div class="mb-3">
+										  
+										  <textarea class="modal-input" id="message-text" placeholder="Message * optional"></textarea>
+										</div>
+									  </form>
+									</div>
+									<div class="modal-footer dfx">
+									 <div class="dfx">
+										 <button type="button" class="btn btn-primary">Send message</button>
+									 </div>
+									</div>
+								  </div>
+								</div>
+							  </div>
 						</div>
 					</div>
 					<div class="col sz ">
@@ -185,7 +199,6 @@
 					<!-- Additional required wrapper -->
 					<div class="swiper-wrapper scrollto">
 					<!-- Slides -->
-					
 						<div class="swiper-slide dfc">
 							<div class="trust-img ">
 								<img src="./assets/images/Mercedes-logo.png"
@@ -204,34 +217,7 @@
 						<div class="swiper-slide">
 							<div class="client "><img src="./assets/images/Haier-logo.png" alt="Leoni"></div>
 						</div>
-
-						
 					</div>
-		
-				<!-- <div class="swiper">
-					<div class="swiper-wrapper dfx">
-						<div class="swiper-slide ">
-							<div class="trust">
-								<div class="trust-img ">
-									<img src="./assets/images/Mercedes-logo.png"
-										alt="Mersedes-logo">
-									</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="trust-desc">Trusted by Global Brands</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="client"><img src="./assets/images/Leoni-logo.png" alt="Leoni"></div>
-						</div>
-						<div class="swiper-slide">
-							<div class="client"><img src="./assets/images/Ford-logo.png" alt="Leoni"></div>
-						</div>
-						<div class="swiper-slide">
-							<div class="client "><img src="./assets/images/Haier-logo.png" alt="Leoni"></div>
-						</div>
-					</div>
-				</div> -->
 			</div>
 			<!-- <div class="clients-block">
 					<div class="trust">
@@ -244,7 +230,7 @@
 						<div class="client "><img src="./assets/images/Haier-logo.png" alt="Haier-logo"></div>
 					</div>
 				</div> -->
-
+			</div>
 		</section>
 
 		<section class="section global-team">

@@ -479,8 +479,27 @@ body {
 	line-height: 40px;
 	color: #0050FF;
 }
+.modal-header{
+	border-bottom: none;
+}
+.modal-footer{
+	border-top: none;
+}
+.modal-input{
+	padding: 12px 24px;
+	background: #F0F0F0;
+	border: 1px solid #F0F0F0;
+	border-radius: 0;
+	width: 100%;
+}
+.modal-input::placeholder{
+	
 
-
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	color: #787E98;
+}
 /* ///////////////////////////////////////ABOUT US */
 .bg-1{
 	width: 200px;
@@ -613,7 +632,7 @@ body {
 	text-align: right;
 }
 .tac{
-	text-align: center;
+	text-align: center !important;
 }
 .tal{
 	text-align-last: left;
