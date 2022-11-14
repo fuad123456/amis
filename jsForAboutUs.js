@@ -15,8 +15,7 @@ const swiper = new Swiper('.swiper', {
 	loop: true,
     slidesPerView: 'auto',
   	spaceBetween: 0,
-	loopedSlides:5,
-	// loopedSlides:3,
+	loopedSlides:2,
 	// If we need pagination
 	pagination: {
 	  el: '.swiper-pagination',
@@ -25,17 +24,17 @@ const swiper = new Swiper('.swiper', {
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-		  slidesPerView: 2,
+		  slidesPerView: 1,
 		  spaceBetween: 10
 		},
 		// when window width is >= 480px
 		480: {
-		  slidesPerView: 2,
+		  slidesPerView: 1,
 		  spaceBetween: 30
 		},
 		// when window width is >= 640px
 		640: {
-		  slidesPerView: 4,
+		  slidesPerView: 2,
 		  spaceBetween: 40
 		}
 	  }

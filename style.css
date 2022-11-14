@@ -510,6 +510,15 @@ body {
 	bottom: -40px;
 	left: 40%;
 }
+.bg-2{
+	width: 56px;
+	height: 62px;
+	background: linear-gradient(152.36deg, #FFFFFF -10.8%, rgba(53, 40, 54, 0) 102.52%);
+	border-radius: 5px;
+	position: absolute;
+	bottom: -17px;
+	left: 43%;
+}
 .win-basis{
 	margin-top: 156px;
 }
@@ -545,6 +554,9 @@ body {
 	line-height: 30px;
 	color: #151E42;
 }
+.custumers .section-title{
+	margin-bottom: 32px;
+}
 /*/////////////////////////////////////////////////////////////// UTILITIES */
 .section-title {
 	font-weight: 800;
@@ -555,6 +567,9 @@ body {
 }
 
 .mb-lg-56 {
+	margin-bottom: 56px;
+}
+.mb-56 {
 	margin-bottom: 56px;
 }
 .mb-sm-48{
@@ -730,10 +745,11 @@ body {
 .center{
 	align-items: center;
 }
+.swip{
+	margin-top: 152px;
+}
 @media (min-width:760px) {
-	.main-section-title{
-		margin-bottom: 56px;
-	}
+
 	.section-desc{
 		margin-bottom: 48px;
 	}
@@ -741,7 +757,7 @@ body {
 	.mb-lg-56{
 		margin-bottom: 56px;
 	}
-	.mb-sm-48{
+.z	.mb-sm-48{
 		margin-bottom: 0px;
 	}
 
@@ -792,14 +808,14 @@ body {
 		
 	}
 	.services-item{
-	min-width: 150px;
-	max-width: 100%;
-	flex: 1;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 20px;
-	background: #D9D9D9;
-	padding: 24px 5px 26px 20px;
+		min-width: 150px;
+		max-width: 100%;
+		flex: 1;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		background: #D9D9D9;
+		padding: 24px 5px 26px 20px;
 	}
 	.services .mobile-button{
 		margin-top: 68px;
@@ -979,6 +995,54 @@ body {
 		border-radius: 50%;
 		background-color:#0050FF;
 	}
+	/* ABOUT-US */
+	.main-about-img{
+		width: 92px;
+		height: 112px;
+		border-radius: 30px;
+	}
+	  .section-desc.mb-104{
+		margin-top: 56px;
+		margin-bottom: 83px;
+	  }
+	  .win-basis.mb-72{
+		margin-bottom: 56px;
+	  }
+	  .win-basis img{
+		width: 198px;
+		height: 183px;
+	  }
+	  .stack .section-title{
+		margin-bottom: 56px;
+	  }
+	  .item-of-stack{
+		padding:24px 26px;
+		background: #D9D9D9;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+	  }
+	  .feedback-block{
+		background: #DEECFF;
+		border-radius: 30px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #151E42;
+	  }
+	  .sphere-title{
+		font-weight: 700;
+		font-size: 15px;
+		line-height: 18px;
+	  }
+	  .sphere img{
+		width: 50px;
+		height: 50px;
+	  }
+	  .sphere-item{
+		max-width:50%;
+
+	  }
 	.btn-more{
 		padding: 28px 30px;
 	}

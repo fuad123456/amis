@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="./swiper-bundle.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -15,46 +16,94 @@
 </head>
 
 <body>
-	<header class="header">
-		<div class="main-container">
-			<div class="header-container">
-				<div class="logo">
-					<img src="assets/svg/logo-light.png" alt="logo">
+	<div class="main-container">
+		<header class="header ">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container center main-container position-absolute top-0 start-0 zi-100 bgcw">
+					<a class="navbar-brand mr-64" href="#">
+						<img src="./assets/svg/logo-light.png" alt="">
+					</a>
+					<button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul
+							class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-lg-between align-content-lg-center align-content-sm-start mr-64  ">
+							<li class="nav-item">
+								<a class="nav-list__link" href="#">about us</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-list__link" href="#">services</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-list__link" href="#">projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-list__link" href="#">careers</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-list__link" href="#">blog</a>
+							</li>
+							<div class="d-block d-lg-none">
+								<div class="btn-contact "><button class="btn btn-outline me-2">CONTACT</button></div>
+							</div>
+						</ul>
+						<div class="btn-contact d-none d-lg-block"><button class="btn btn-outline me-2">CONTACT</button>
+						</div>
+					</div>
 				</div>
-				<nav>
-					<ul class="nav nav-list">
-						<li class="nav-list__item"><a class="nav-list__link" href="#">about us</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">services</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">projects</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">careers</a></li>
-						<li class="nav-list__item"><a class="nav-list__link" href="#">blog</a></li>
-					</ul>
-				</nav>
-				<div class="btn-contact"><button class="btn btn-outline me-2">CONTACT</button></div>
-			</div>
-		</div>
-	</header>
+			</nav>
+			<!-- </div> -->
+		</header>
+
+	</div>
 	<main>
 		<div class="main-container">
-			<section class="main-content mt-152 pb-80">
+			<section class="main-content pb-80">
 				<div class="container main-container">
-					<div class="row justify-content-between">
-						<div class="col-4 sz">
-							<div class="main-blok">
-								<h1 class="main-section-title mb-96">About us</h1>
-								<p class="section-desc mb-104">US-based tech company that combines solutions ahead of
-									the pack</p>
-								<p class="section-desc mb-48">We provide software of varying complexity and professional
-									IT staff for clients around the world</p>
+					<div class="w-100 d-none d-md-block">
+						<div class="row justify-content-between">
+							<div class=" col col-lg-4 sz">
+								<div class="main-blok">
+									<h1 class="main-section-title mb-96">About us</h1>
+									<p class="section-desc mb-104">US-based tech company that combines solutions ahead
+										of
+										the pack</p>
+									<p class="section-desc mb-48">We provide software of varying complexity and
+										professional
+										IT staff for clients around the world</p>
+								</div>
 							</div>
-						</div>
-						<div class="col sz">
-							<div class="tar pos-r">
-								<img src="assets/images/about-us-main-img.png" alt="">
-								<div class="bg-1"></div>
+							<div class="col sz">
+								<div class="tar pos-r">
+									<img src="assets/images/about-us-main-img.png" alt="" class=" main-about-img">
+									<!-- <div class="bg-1"></div> -->
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="w-100 d-block d-md-none">
+						<div class="row justify-content-between">
+							<h1 class="main-section-title mb-96">About us</h1>
+							<div class=" col-7 col-lg-4 sz">
+								<div class="main-blok">
+									<p class="section-desc mb-104">Amis Group is a custom software development company
+										established in the USA</p>
+								</div>
+							</div>
+							<div class="col sz">
+								<div class="tar pos-r">
+									<img src="assets/images/about-us-main-img.png" alt="" class=" main-about-img">
+									<div class="bg-2"></div>
+								</div>
+							</div>
+						</div>
+						<p class="section-desc mb-48">We provide software of varying complexity and professional
+							IT staff for clients around the world</p>
+					</div>
+
 				</div>
 			</section>
 		</div>
@@ -62,20 +111,20 @@
 			<div class="main-container">
 				<h2 class="section-title mb-80">Win-Win basis</h2>
 				<div class="row align-items-center">
-					<div class="col-5">
+					<div class="col-sm-12 col-lg-5">
 						<p class="section-desc">As a responsible company, we maintain sustainable, long-term
 							cooperation. Our goal is to launch high-quality tech products that meet the needs of your
 							users and can scale at the same pace as your business will grow</p>
 					</div>
-					<div class="col">
+					<div class="col d-none d-lg-block">
 						<div class="tar"><img src="./assets/images/win-basis-img.png" alt=""></div>
 					</div>
 				</div>
 				<div class="row mt-100">
-					<div class="col">
+					<div class="col-sm-12 col-lg">
 						<div class="tal"><img src="./assets/images/About-us-woman.png" alt=""></div>
 					</div>
-					<div class="col-5">
+					<div class="col-sm-12 col-lg-5">
 						<p class="section-desc mb-96">We believe that there is an effective team behind every great
 							product</p>
 						<p class="section-desc">Our engineers are geared to help you with your Web and Mobile
@@ -84,10 +133,11 @@
 				</div>
 			</div>
 		</section>
-		<section class="section stack mb-56">
+
+		<section class="section stacks mb-56">
 			<div class="main-container">
 				<h2 class="section-title mb-56">Suitable stack technologies <br>for your project</h2>
-				<div class="stack">
+				<div class="stack d-none d-lg-block">
 					<div class="row">
 						<div class="col-auto">
 							<div class="df fdc h-100 justify-content-between">
@@ -167,45 +217,74 @@
 						</div>
 					</div>
 				</div>
+				<div class="stack d-block d-lg-none">
+					<div class="row g-2">
+						<div class="col-6">
+							<div class="item-of-stack">Mobile<br> Development</div>
+						</div>
+						<div class="col-6">
+							<div class="item-of-stack">Programming Languages</div>
+						</div>
+						<div class="col-6">
+							<div class="item-of-stack">Mobile<br> Development</div>
+						</div>
+						<div class="col-6">
+							<div class="item-of-stack">Programming Languages</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
+
 		<section class="section custumers">
 			<div class="main-container">
 				<h2 class="section-title">Hear what our <br>customers think</h2>
 				<div class="feedback-custumers  mb-96">
-					<div class="row">
-						<div class="col-6">
-							<div class="feedback-block">I truly appreciate the way you prepared this project and how you take care of every requirement</div>
-							<div class="df">
-								<img src="./assets/images/lp-global.png" alt="lp-global">
-								<div class="feedback-author mla">Mariya Vlasova </div>
+					<div class="swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide dfc">
+								<div>
+									<div class="feedback-block">I truly appreciate the way you prepared this project and how
+										you take care of every requirement</div>
+									<div class="df d-none d-lg-block">
+										<img src="./assets/images/lp-global.png" alt="lp-global">
+										<div class="feedback-author mla">Mariya Vlasova </div>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="col-6">
-							<div class="feedback-block ">Thanks to the high level of customer focus and professionalism together we develop the industry
-							</div>
-							<div class="df">
-								<img src="./assets/images/mersedes.png" alt="lp-global">
-								<div class="feedback-author mla">Elena Garelik</div>
+							<div class="swiper-slide dfc">
+								<div>
+									<div class="feedback-block ">Thanks to the high level of customer focus and professionalism
+										together we develop the industry
+									</div>
+									<div class="df d-none d-lg-block">
+										<img src="./assets/images/mersedes.png" alt="lp-global">
+										<div class="feedback-author mla">Elena Garelik</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="sphere mb-80">
-					<div class="row justify-content-between">
-						<div class="col-3 tac">
-							<h3 class="sphere-title mb-24">Medicine</h3>
-							<img src="./assets/svg/Medecine.svg" alt="">
+					<div class="d-flex row justify-content-between gy-4">
+						<div class=" col-lg-3 tac sphere-item">
+							<div>
+								<h3 class="sphere-title mb-24">Medicine</h3>
+								<img src="./assets/svg/Medecine.svg" alt="">
+							</div>
 						</div>
-						<div class="col-3 tac">
-							<h3 class="sphere-title mb-24">E-commerce</h3>
-							<img src="./assets/svg/E-commerce.svg" alt="">
+						<div class=" col-lg-3 tac sphere-item">
+							<div>
+								<h3 class="sphere-title mb-24">E-commerce</h3>
+								<img src="./assets/svg/E-commerce.svg" alt="">
+							</div>
 						</div>
-						<div class="col-3 tac">
+						<div class="col-lg-3 tac sphere-item">
 							<h3 class="sphere-title mb-24">Entertainment</h3>
 							<img src="./assets/svg/Entertainment.svg" alt="">
 						</div>
-						<div class="col-3 tac">
+						<div class="col-lg-3 tac sphere-item">
 							<h3 class="sphere-title mb-24">Fintech</h3>
 							<img src="./assets/svg/Fintech.svg" alt="">
 						</div>
@@ -213,38 +292,127 @@
 					</div>
 				</div>
 				<div class="row align-items-center">
-					<div class="col-5">
-						<p class="section-desc">We have developed more than 300 projects with companies in the fields of healthtech, logistics, fintech, e-commerce, education, finance, foodtech, games and entertainment</p>
+					<div class="col-sm-12 col-lg-5">
+						<p class="section-desc">We have developed more than 300 projects with companies in the fields of
+							healthtech, logistics, fintech, e-commerce, education, finance, foodtech, games and
+							entertainment</p>
 					</div>
 					<div class="col">
-						<div class="tar"><img src="./assets/images/computer.png" alt=""></div>
+						<div class="tar d-none d-lg-block"><img src="./assets/images/computer.png" alt=""></div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<div class="footer-main-content">
+
+
+	</main>
+	<footer>
+		<div class="footer-main-content ">
 			<div class="main-container">
-				<div class="row">
-					<div class="col sz">
-						<div class="footer-content mb-20">US-based custom software development company specializing in providing businesses worldwide with complex web and mobile technology solutions
+				<div class="d-block d-lg-none">
+					<div class="footer-content mb-24">
+						US-based custom software<br> development company
+					</div>
+					<div class="row">
+						<div class="col-auto">
+							<div class="linked"><a href="#"><img src="./assets/svg/Linked.svg" alt="Linked in"></a></div>
 						</div>
-						<div class="footer-logos">
-							<div class="linked"><img src="./assets/svg/Linked.svg" alt="Linked in"></div>
-							<div class="linked"><img src="./assets/svg/mail.svg" alt="Linked in"></div>
+						<div class="col">
+							<div class="w-100">2500 Hollywood Blvd, STE 309-2, Hollywood, Florida 33020</div>
+						</div>
+						<div class="col-auto">
+							<a href="#">
+								<div class="vertical-arrow">
+									<img src="./assets/svg/vertical-arrow.svg" alt="arrow">
+								</div>
+							</a>
 						</div>
 					</div>
-					<div class="col sz">
-						<div class="tar">
-							<div class="main-logo-footer mb-24">
-								<img src="./assets/svg/Logo-footer.svg" alt="">
+				</div>
+				<div class="d-none d-lg-block">
+					<div class="row ">
+						<div class="col sz">
+							<div class="footer-content mb-20">US-based custom software development company specializing
+								in providing businesses worldwide with complex web and mobile technology solutions
 							</div>
-							<div>2500 Hollywood Blvd, STE 309-2, Hollywood, Florida 33020</div>
+							<div class="footer-logos">
+								<div class="linked"><img src="./assets/svg/Linked.svg" alt="Linked in"></div>
+								<div class="linked"><img src="./assets/svg/mail.svg" alt="Linked in"></div>
+							</div>
 						</div>
+						<div class="col sz">
+							<div class="tar">
+								<div class="main-logo-footer mb-24">
+									<img src="./assets/svg/Logo-footer.svg" alt="">
+								</div>
+								<div>2500 Hollywood Blvd, STE 309-2, Hollywood, Florida 33020</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- <div class="footer-secondary-content  d-none d-lg-block">
+			<div class="secondary-container">
+				<div class="row">
+					<div class="col justify-content-end mta df fdc">
+						<div class="footer-contacts mta">
+							<div>Commercial Director </div>
+							<div>example@amis-group.com</div>
+							<div>+1 (954) 567-1970</div>
+						</div>
+					</div>
+					<div class="col align-items-end df fdc tar">
+						<div class="rec1"></div>
+						<div class="footer-contacts">
+							<div>Sales Director</div>
+							<div>anton@amis-group.com</div>
+							<div>+1 (954) 348-1960</div>
+						</div>
+					</div>
+					<div class="col tar">
+						<div class="rec2">Europe & <br>USA</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</main>
+		<div class="footer-end d-none d-lg-block">
+			<div class="secondary-container">
+				<div class="tac mb-lg-56"><img src="./assets/svg/circle-4.svg" alt="circle"></div>
+				<div class="df align-items-end ">
+					<div class="footer-end-blocks mr-50">
+						<div class="block-project">
+							<div class="block-project-title">PROJECTS</div>
+							<div class="block-project-amount">300+</div>
+						</div>
+						<div class="block-project">
+							<div class="block-project-title"> SOLUTIONS</div>
+							<div class="block-project-amount">140+</div>
+						</div>
+						<div class="block-project">
+							<div class="block-project-title">SPECIALISTS</div>
+							<div class="block-project-amount">6000+</div>
+						</div>
+						<div class="block-costumers">
+							<div class="block-project-title">CUSTOMERS</div>
+							<div class="block-project-amount">40+</div>
+						</div>
+					</div>
+					
+					<img src="./assets/images/tree.png" alt="">
+				</div>
+			</div>
+		</div> -->
+	</footer> 
+	<script src="./swiper-bundle.min.js"></script>
+	<script src="./jsForAboutUs.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+		integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+		integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
