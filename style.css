@@ -748,6 +748,10 @@ body {
 .swip{
 	margin-top: 152px;
 }
+#chart {
+	max-width: 650px;
+	margin: 35px auto;
+  }
 @media (min-width:760px) {
 
 	.section-desc{

@@ -1,3 +1,5 @@
+// import ApexCharts from 'apexcharts';
+
 let menuIcon = document.querySelector(".navbar-toggler-icon");
 menuIcon.style.backgroundImage = 'url("./assets/svg/menu-icon.svg")';
 menuIcon.addEventListener("click", function () {
@@ -8,7 +10,6 @@ menuIcon.addEventListener("click", function () {
     this.style.backgroundImage = "url(./assets/svg/menu-icon.svg)";
   }
 });
-const swiper1 = document.querySelector('.swiper').swiper;
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
 	direction: 'horizontal',
@@ -19,29 +20,30 @@ const swiper = new Swiper('.swiper', {
 	// loopedSlides:3,
 	// If we need pagination
 	pagination: {
-	  el: '.swiper-pagination',
+		el: '.swiper-pagination',
 	},
-  
+	
 	breakpoints: {
 		// when window width is >= 320px
 		320: {
-		  slidesPerView: 2,
-		  spaceBetween: 10
+			slidesPerView: 2,
+			spaceBetween: 10
 		},
 		// when window width is >= 480px
 		480: {
-		  slidesPerView: 2,
-		  spaceBetween: 30
+			slidesPerView: 2,
+			spaceBetween: 30
 		},
 		// when window width is >= 640px
 		640: {
-		  slidesPerView: 4,
-		  spaceBetween: 40
+			slidesPerView: 4,
+			spaceBetween: 40
 		}
-	  }
-  
+	}
+	
 	// And if we need scrollbar
 	// scrollbar: {
-	//   el: '.swiper-scrollbar',
-	// },
-  });
+		//   el: '.swiper-scrollbar',
+		// },
+	});
+	const swiper1 = document.querySelector('.swiper').swiper;
