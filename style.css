@@ -596,6 +596,9 @@ body {
 .mb-20{
 	margin-bottom: 20px;
 }
+.mb-45{
+	margin-bottom: 45px;
+}
 .mb-80{
 	margin-bottom: 80px;
 }
@@ -1046,6 +1049,39 @@ body {
 	  .sphere-item{
 		max-width:50%;
 
+	  }
+	  /* PROJECTS */
+	  .look-look img{
+		max-width: 100%;
+	  }
+	  .look-look .mt-100{
+		margin-top: 54px;
+	  }
+	  .look-look .cash{
+		margin-bottom: 45px;
+	  }
+	  .projects-block{
+		position: relative;
+		max-width: 196px;
+		padding: 28px 20px 28px 22px;
+		background-color: #0050FF;
+		color: #FFFFFF;
+	  }
+	  .projects-block-title{
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		margin-bottom: 24px;
+	  }
+	  .projects-block-desc{
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+	  }
+	  .arrow-button-svg{
+		position: absolute;
+		bottom: 10px;
+		right: 20px;
 	  }
 	.btn-more{
 		padding: 28px 30px;

@@ -112,3 +112,12 @@ legend: {
   chart.render();
 //   var chart = new ApexCharts(el, options);
 
+let menuIcon = document.querySelector(".navbar-toggler-icon");
+menuIcon.style.backgroundImage = 'url("./assets/svg/menu-icon.svg")';
+menuIcon.addEventListener("click", function () {
+  if (this.style.backgroundImage === 'url("./assets/svg/menu-icon.svg")') {
+    this.style.backgroundImage = "url(./assets/svg/Close.svg)";
+  } else if (this.style.backgroundImage !== "url(./assets/svg/menu-icon.svg)") {
+    this.style.backgroundImage = "url(./assets/svg/menu-icon.svg)";
+  }
+});
