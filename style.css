@@ -1106,3 +1106,74 @@ body {
 	}
 
 }
+.blogs a{
+	text-decoration: none;
+	color: #151E42;
+}
+.blogs a:hover{
+	color: #0050FF;
+}
+.blog-item{
+	margin-bottom: 18px;
+}
+.container-modal{
+	max-width: 565px;
+	margin: 0 auto;
+}
+.modal-title{
+	font-weight: 500;
+	font-size: 33px;
+	line-height: 40px;
+	color: #151E42;
+	margin-bottom: 40px;
+	margin-top: 54px;
+}
+.modal .section-desc p{
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 29px;
+}
+.modal-fullscreen .modal-content{
+	height: auto;
+}
+.blog-img{
+	width: 496px;
+	height: 282px;
+}
+
+.modal .blog-img{
+	width:562px;
+	margin-bottom: 40px;
+}
+.btn-modal{
+	position: absolute;
+	right: 23px;
+	top: 18px; 
+	border: none;
+	cursor: pointer;
+	background:none;
+}
+.btn-modal:focus{
+	border: none;
+}
+@media(min-width:320px) and (max-width:760px){
+	.container-modal{
+		max-width: 100%;
+		padding: 0 30px
+	}
+	.blog-img{
+		max-width:325px;
+		height: 200px;
+	}
+	.modal-fullscreen .modal-content{
+		height: auto;
+	}
+}
+.pr-56{
+	padding-right: 56px;
+}
+.send-like{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
