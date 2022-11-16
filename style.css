@@ -1305,6 +1305,9 @@ a.dropdown-toggle::after{
 .custom-dev{
 	margin-top: 8px;
 }
+.custom-dev li{
+	list-style: none;
+}
 .custom-dev .section-title{
 	margin-bottom: 64px;
 }
@@ -1338,6 +1341,19 @@ a.dropdown-toggle::after{
 	font-size: 36px;
 	line-height: 65px;
 	margin-top: 64px;
+}
+.section-desc-small{
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 33px;
+}
+.careers-slider-img img{
+	max-width:100%;
+}
+.custom-dev ul{
+	padding:0
 }
 @media(min-width:320px) and (max-width:760px){
 	.container-modal{
@@ -1383,7 +1399,76 @@ a.dropdown-toggle::after{
 		font-size: 15px;
 		line-height: 18px;
 	}
-}
-.careers-slider-img img{
-	max-width:100%;
+	.main-sevice-content{
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+	.section-desc-small{
+		font-family: 'Montserrat';
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+		color: #151E42;
+	}
+	.custom-dev li{
+		list-style-type: disc;
+
+	}
+	.custom-dev ul{
+		padding:2rem;
+	}
+	.hr{
+		margin-top: 0;
+	}
+	.mobile-apps .section-title{
+		margin-top: 37px;
+		margin-bottom: 34px;
+	}
+
+	.it-outstaffing{
+		margin-top: 54px;
+		margin-bottom: 10px;
+	}
+	.block-for-outstaff{
+		height: 156px;
+		width: 100%;
+		background: #0050FF;
+	}
+	.services-link{
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+		margin-top: 18px;
+	}
+	.it-outsource .section-title{
+		margin-top: 46px;
+		margin-bottom: 34px;
+	}
+	.control{
+		margin-top: 62px;
+	}
+	.control .section-title{
+		/* margin-top: 62px; */
+		margin-bottom: 34px;
+	}
+	.main-focus{
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.img-support{
+		margin-top: 82px;
+		position: relative;
+	}
+	.support-count{
+		position: absolute;
+		left: 67%;
+		top: 65%;
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 25px;
+		color: #151E42;
+		background: none;
+	}
 }
