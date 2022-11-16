@@ -1,9 +1,26 @@
+@font-face{
+	font-family: 'Magistral';
+  	font-style: normal;
+  	font-weight: 800;
+  /* Браузер сначала попробует найти шрифт локально */
+  src: local("Roboto"),
+       /* Если не получилось, загрузит woff2 */
+       url("./assets/font/Magistral-ExtraBold.ttf") format("woff2"),
+       /* Если браузер не поддерживает woff2, загрузит woff */
+       url("./assets/font/Magistral-ExtraBold.woff") format("woff");
+}
 body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Montserrat';
 }
-
+h1,h2{
+	font-family: 'Magistral';
+	font-style: normal;
+	font-weight: 800;
+	font-size: 64px;
+	line-height: 77px;
+}
 :root {
 	--main-btn-color: #0050FF;
 	--secondary-btn-color: #151E42;
@@ -64,7 +81,7 @@ body {
 
 /* MAIN-CONTENT */
 .main-content {
-	padding-top: 184px;
+	padding-top: 200px;
 	background-repeat: repeat;
 }
 
@@ -73,15 +90,19 @@ body {
 	font-size: 64px;
 	line-height: 77px;
 	color: #151E42;
-	letter-spacing: 2px;
+	letter-spacing: 0px;
 }
-
+.home-section{
+	padding-bottom: 320px;
+}
 .section-desc {
 	font-weight: 400;
 	font-size: 27px;
 	line-height: 33px;
 }
-
+.main-block{
+	margin-top: 52px;
+}
 .section-img {
 	margin-top: -40px;
 }
@@ -158,13 +179,12 @@ body {
 	font-size: 27px;
 	line-height: 33px;
 	max-width: 400px;
-	letter-spacing: 2px;
 }
 
 /* services */
 .services {
 	margin-top: 230px;
-	margin-bottom: 105px;
+	margin-bottom: 150px;
 }
 
 .services-items {
@@ -177,12 +197,12 @@ body {
 }
 
 .services-item {
-	width: 198px;
+	width: 214px;
 	font-weight: 400;
 	font-size: 27px;
 	line-height: 33px;
 	color: #151E42;
-	letter-spacing: 1px;
+	/* letter-spacing: 1px; */
 }
 
 /* FEEDBACk */
@@ -214,6 +234,7 @@ input {
 }
 .textarea-place{
 	position: relative;
+	margin-bottom: 12px;
 }
 .textarea-place img{
 	position: absolute;
@@ -251,7 +272,7 @@ input {
 
 /* CLIENTS */
 .clients {
-	margin-top: 127px;
+	margin-top: 150px;
 }
 .advantage{
 	display: flex;
@@ -262,7 +283,7 @@ input {
 	max-width: 204px;
 }
 .advantage-amount{
-	margin-bottom: 14px;
+	margin-bottom: 7px;
 	font-weight: 900;
 	font-size: 48px;
 	line-height: 59px;
@@ -289,6 +310,9 @@ input {
 	font-size: 32px;
 	line-height: 39px;
 }
+.trust-img{
+	width: auto;
+}
 .client-items{
 	display: flex;
 	align-items: center;
@@ -296,7 +320,7 @@ input {
 }
 /* global-team */
 .global-team{
-	margin-top: 288px;
+	margin-top: 269px;
 }
 .offices{
 	font-weight: 400;
@@ -579,11 +603,13 @@ input {
 	font-size: 32px;
 	line-height: 38px;
 	color: #151E42;
-	text-transform: uppercase;
 }
 
 .mb-lg-56 {
 	margin-bottom: 56px;
+}
+.mb-43{
+	margin-bottom: 43px;
 }
 .mb-56 {
 	margin-bottom: 56px;
@@ -1274,6 +1300,44 @@ a.dropdown-toggle::after{
 	font-weight: 400;
 	font-size: 33px;
 	line-height: 40px;
+}
+/* SERVICES */
+.custom-dev{
+	margin-top: 8px;
+}
+.custom-dev .section-title{
+	margin-bottom: 64px;
+}
+.hr{
+	margin-top: 56px;
+	border-top: 2px solid #151E42;
+}
+.services-main{
+	margin-top: 104px;
+}
+.services-main .section-title{
+	margin-bottom: 64px;
+}
+.service-item{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.service-hr{
+	position: relative;
+}
+.service-hr .mobile-button{
+	padding: 8px;
+	position: absolute;
+	bottom: -16px;
+	left: 30%;
+	width: 192px;
+}
+.main-focus{
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 65px;
+	margin-top: 64px;
 }
 @media(min-width:320px) and (max-width:760px){
 	.container-modal{
