@@ -47,3 +47,17 @@ const swiper = new Swiper('.swiper', {
 		// },
 	});
 	const swiper1 = document.querySelector('.swiper').swiper;
+
+	let show= document.querySelector('.navbar-collapse.collapse')
+	let btn= document.querySelector('.btn.mobile-button')
+	let toggler = document.querySelector('.navbar-toggler')
+	
+	window.addEventListener('scroll',function(){
+		let attrTogler=toggler.getAttribute('aria-expanded')
+		if(window.pageYOffset>250){
+			show.classList.remove('show')
+			menuIcon.style.backgroundImage = 'url("./assets/svg/menu-icon.svg")';
+			attrTogler=false
+		}
+		
+	})
