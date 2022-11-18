@@ -19,12 +19,12 @@
 <body>
 <div class="main-container">
 	<header class="header ">
-		<nav class="navbar navbar-expand-lg">
-			<div class="container center main-container position-absolute top-0 start-0 zi-100 bgcw">
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container center main-container  zi-100 bgcw">
 				<a class="navbar-brand mr-64" href="#">
 					<img src="./assets/svg/logo-light.png" alt="">
 				</a>
-				<button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
+				<button class="navbar-toggler " type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
 							<div class="btn-contact "><button class="btn btn-outline me-2">CONTACT</button></div>
 						</div>
 					</ul>
-					<div class="btn-contact d-none d-lg-block"><button class="btn btn-outline me-2">CONTACT</button></div>
+					<div class="btn-contact d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat"><button class="btn btn-outline me-2">CONTACT</button></div>
 				</div>
 			</div>
 		</nav>
@@ -111,20 +111,25 @@
 				</div>
 			</div>
 
+
 		</section>
 		<section class="section our">
 			<div class="main-container">
 				<div class="section-content">
 					<div class="df">
 						<div class="images">
-							<div class="women"><img src="./assets/images/Home-page-women.png" alt="">
+							<div><div class="bg-4"></div>
+								<img src="./assets/images/Womens.png" alt=""  class="animaytion-home">
+								
 								<div class="images-content d-block d-lg-none"> Our core expertise lies in facilitating
 									individuals, startups, and large businesses by launching next-generation IT products
 								</div>
 							</div>
-							<div class="blue-ball d-none d-lg-block"><img src="./assets/svg/Blue-ball.svg" alt=""></div>
-							<div class="line d-none d-lg-block"><img src="./assets/svg/line.svg" alt=""></div>
-							<div class="figure d-none d-lg-block"><img src="./assets/svg/Falling-figures.svg" alt="">
+							<div class="blue-ball animaytion-ball d-none d-lg-block"><img src="./assets/svg/Blue-ball.svg" alt="" class="animaytion-ball"></div>
+							<div class="line d-none d-lg-block"><img src="./assets/svg/line.svg" alt="" class="animaytion-line"></div>
+							<div class="figure d-none d-lg-block"><img src="./assets/svg/cube.svg" alt="" class="animaytion-cube">
+							</div>
+							<div class="figure d-none d-lg-block"><img src="./assets/svg/ellipse.svg" alt="" class="animaytion-ellipse">
 							</div>
 						</div>
 
@@ -210,7 +215,6 @@
 							<div class="swiper-slide dfc">
 								<div class="trust-img ">
 									<img src="./assets/images/Mercedes-logo.png" alt="Mersedes-logo">
-									
 								</div>
 							</div>
 							<div class="swiper-slide dfc">

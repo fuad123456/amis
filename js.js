@@ -59,5 +59,4 @@ const swiper = new Swiper('.swiper', {
 			menuIcon.style.backgroundImage = 'url("./assets/svg/menu-icon.svg")';
 			attrTogler=false
 		}
-		
 	})

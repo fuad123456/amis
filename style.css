@@ -38,6 +38,7 @@ h1,h2{
 .main-container {
 	max-width: 1000px;
 	margin: auto;
+
 }
 .secondary-container {
 	max-width: 1440px;
@@ -129,13 +130,15 @@ h1,h2{
 	line-height: 24px;
 }
 .images .blue-ball {
-	position: absolute;
+	position: relative;
+	width: 300px;
+	height: 300px;
 	top: 290px;
 	left: 124px;
 }
 
 .images .women {
-	position: absolute;
+	/* position: absolute; */
 	top: 0;
 	left: 0;
 }
@@ -345,7 +348,8 @@ input {
 }
 .project-items{
 	display: flex;
-	column-gap: 16px;
+	gap: 16px;
+	flex-wrap: wrap;
 }
 .project-item{
 	max-width: 234px;
@@ -568,6 +572,16 @@ input {
 	position: absolute;
 	bottom: -17px;
 	left: 43%;
+}
+.bg-4{
+	width: 158px;
+	height: 190px;
+	background: linear-gradient(152.36deg, #0050FF -10.8%, rgba(255, 255, 255, 0) 102.52%);
+	backdrop-filter: blur(14.041px);
+	border-radius: 30px;
+	top: 7%;
+	left: 17%;
+	position: absolute;
 }
 .win-basis{
 	margin-top: 156px;
@@ -1468,12 +1482,142 @@ a.dropdown-toggle::after{
 		transform: translateY(0);
 		transform: rotate3D(0,50,0,0);
 	}
-	/* 50%{
-		transform: rotate3D(150deg);
-	} */
+
 	100%{
 		transform: translateY(100px);
 		transform: rotate3D(0,150,0,150deg);
+	}
+
+}
+.animaytion-home{
+	position: absolute;
+	animation-name: trans-x;
+	animation-duration: 4s;
+	animation-timing-function:linear;
+	animation-delay: 1s;
+	animation-direction: alternate;
+	animation-iteration-count: 1;
+	transform-style: preserve-3d;
+	perspective-origin: 50% 50%;
+}
+@keyframes trans-x{
+	0%{
+		transform: translateX(0) rotate(0deg);
+	}
+
+	50%{
+		transform:translateX(90px) rotate(50deg);
+	}
+	100%{
+		transform:translateX(0px) rotate(0deg);;
+	}
+
+}
+.animaytion-ball{
+	position: absolute;
+	animation: spin-right 8s linear infinite;
+}
+@keyframes spin-right {
+	0%{
+		transform: rotate(0deg);
+	}
+
+	100% {
+	  transform: rotate(360deg);
+	}
+  }
+.animaytion-line{
+	position: absolute;
+	animation-name: lineToRight;
+	animation: lineToRight 5.5s linear infinite;
+}
+@keyframes lineToRight{
+	0%{
+		transform:translateX(0) translateY(0);
+	}
+	50%{
+		transform:translateX(150px) translateY(-50px);
+	}
+	100%{
+		transform:translateX(0) translateY(0);
+	}
+
+}
+.animaytion-cube{
+	position: absolute;
+	animation-name: spin-cube;
+	animation: spin-cube 10s linear infinite;
+}
+.animaytion-ellipse{
+	position: absolute;
+	animation-name: spin-ellipse;
+	animation: spin-ellipse 5s linear infinite;
+}
+
+
+@keyframes lineToRight{
+	0%{
+		transform:translateX(0) translateY(0);
+	}
+	50%{
+		transform:translateX(150px) translateY(-50px);
+	}
+	100%{
+		transform:translateX(0) translateY(0);
+	}
+
+}
+@keyframes spin-cube{
+	0%{
+		transform:translateX(0) translateY(0);
+	}
+	50%{
+		transform:translateX(0px) translateX(-550px) rotate3D(0,0,200, 360deg);
+	}
+	100%{
+		transform:translateX(0) translateY(0);
+	}
+
+}
+@keyframes spin-ellipse{
+	0%{
+		transform:translateX(0) translateY(0) rotate3D(0,0,200, 10000deg);
+	}
+	5%{
+		transform:translateX(0px) translateY(-50px) rotate3D(0,0,200, 10000deg);
+	}
+	10%{
+		transform:translateX(0px) translateY(-50px) rotate3D(0,0,200, 9500deg);
+	}
+	15%{
+		transform:translateY(-100px) rotate3D(0,0,200, 9000deg);
+	}
+	20%{
+		transform:translateY(-100px) rotate3D(0,0,200, 8500deg);
+	}
+	25%{
+		transform:translateY(-150px) rotate3D(0,0,200, 8000deg);
+	}
+	35%{
+		transform: translateY(-200px) rotate3D(0,0,200, 7000deg);
+	}
+	45%{
+		transform:translateY(-250px) rotate3D(0,0,200, 6000deg);
+	}
+	55%{
+		transform:translateY(-300px) rotate3D(0,0,200, 5000deg);
+	}
+	65%{
+		transform:translateY(-350px) rotate3D(0,0,200, 4000deg);
+	}
+	75%{
+		transform:translateY(-400px) rotate3D(0,0,200, 3000deg);
+	}
+	85%{
+		transform:translateY(-450px) rotate3D(0,0,200, 2000deg);
+	}
+	100%{
+		transform:translateX(0) translateY(0)rotate3D(0,0,200, 1000deg);
 	}
 
 }
