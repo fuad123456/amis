@@ -11,6 +11,7 @@ menuIcon.addEventListener("click", function () {
 const swiper1 = document.querySelector('.swiper').swiper;
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
+	// autoHeight: true,
 	direction: 'horizontal',
 	loop: true,
     slidesPerView: 'auto',
@@ -28,12 +29,16 @@ const swiper = new Swiper('.swiper', {
 		  spaceBetween: 10
 		},
 		// when window width is >= 480px
+		400: {
+		  slidesPerView: 2,
+		  spaceBetween: 20
+		},
 		480: {
 		  slidesPerView: 1,
 		  spaceBetween: 20
 		},
 		// when window width is >= 640px
-		640: {
+		768: {
 		  slidesPerView: 2,
 		  spaceBetween: 40
 		}
@@ -44,3 +49,27 @@ const swiper = new Swiper('.swiper', {
 	//   el: '.swiper-scrollbar',
 	// },
   });
+
+
+  
+//   window.addEventListener('resize',function(){
+// 	let heights=document.querySelectorAll('.feedback-block')
+// 	let arr=[]
+// 	heights.forEach(el=>{
+// 		arr.push(el.offsetHeight)
+// 		// console.log(getComputedStyle(el).height);
+// 	})
+// 	let max=Math.max(...arr)
+// 	heights.forEach(el=>{
+// 		el.style.height=max+"px"
+// 	})
+// })
+	// let heights=document.querySelectorAll('.feedback-block')
+	// let arr=[]
+	// heights.forEach(el=>{
+	// 	arr.push(el.offsetHeight)
+	// })
+	// let max=Math.max(...arr)
+	// heights.forEach(el=>{
+	// 	el.style.height=max+10+"px"
+	// })

@@ -12,6 +12,10 @@ menuIcon.addEventListener("click", function () {
 });
 const swiper = new Swiper('.swiper', {
 	// Optional parameters
+	autoplay: {
+		delay: 4000,
+	  },
+
 	direction: 'horizontal',
 	loop: true,
     slidesPerView: 'auto',

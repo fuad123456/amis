@@ -18,12 +18,12 @@
 <body>
 	<div class="main-container">
 		<header class="header ">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container center main-container position-absolute top-0 start-0 zi-100 bgcw">
+			<nav class="navbar navbar-expand-lg fixed-top">
+				<div class="container center main-container  zi-100 bgcw">
 					<a class="navbar-brand mr-64" href="#">
 						<img src="./assets/svg/logo-light.png" alt="">
 					</a>
-					<button class="navbar-toggler position-absolute top-0 end-0" type="button" data-bs-toggle="collapse"
+					<button class="navbar-toggler " type="button" data-bs-toggle="collapse"
 						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
@@ -50,22 +50,21 @@
 								<div class="btn-contact "><button class="btn btn-outline me-2">CONTACT</button></div>
 							</div>
 						</ul>
-						<div class="btn-contact d-none d-lg-block"><button class="btn btn-outline me-2">CONTACT</button>
-						</div>
+						<div class="btn-contact d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat"><button class="btn btn-outline me-2">CONTACT</button></div>
 					</div>
 				</div>
 			</nav>
 			<!-- </div> -->
 		</header>
-
+	
 	</div>
 	<main>
-		<div class="main-container">
+
 			<section class="main-content pb-80">
-				<div class="container main-container">
+				<div class=" main-container">
 					<div class="w-100 d-none d-md-block">
 						<div class="row justify-content-between">
-							<div class=" col col-lg-4 sz">
+							<div class=" col col-lg-4">
 								<div class="main-blok">
 									<h1 class="main-section-title mb-96">About us</h1>
 									<p class="section-desc mb-104">US-based tech company that combines solutions ahead
@@ -78,49 +77,49 @@
 							</div>
 							<div class="col sz">
 								<div class="tar pos-r">
-									<img src="assets/images/about-us-main-img.png" alt="" class=" main-about-img">
+									<img src="assets/images/about-us-main-img.png" alt="" class="main-about-img">
 									<div class="bg-1 animaytion"></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="w-100 d-block d-md-none">
-						<div class="row justify-content-between">
-							<h1 class="main-section-title mb-96">About us</h1>
-							<div class=" col-7 col-lg-4 sz">
+					<div class="w-100 d-block d-md-none mt-100" style="background: radial-gradient(50% 50% at 50% 50%, #DEECFF 0%, rgba(217, 217, 217, 0) 100%);">
+						<h1 class="main-section-title mb-96">About us</h1>
+						<div class="row">
+							<div class="col-8">
 								<div class="main-blok">
-									<p class="section-desc mb-104">Amis Group is a custom software development company
-										established in the USA</p>
+									<p class="section-desc-small mb-104">Amis Group is a custom software development company established in the USA</p>
 								</div>
 							</div>
-							<div class="col sz">
+							<div class="col-auto sz">
 								<div class="tar pos-r">
-									<img src="assets/images/about-us-main-img.png" alt="" class=" main-about-img">
+									<img src="assets/images/about-us-main-img.png" alt="" class="main-about-img">
 									<div class="bg-2 animaytion"></div>
 								</div>
 							</div>
 						</div>
-						<p class="section-desc mb-48">We provide software of varying complexity and professional
+						<p class="section-desc-small mb-48">We provide software of varying complexity and professional
 							IT staff for clients around the world</p>
 					</div>
 
 				</div>
 			</section>
-		</div>
 		<section class="section win-basis mb-72">
 			<div class="main-container">
 				<h2 class="section-title mb-80">Win-Win basis</h2>
 				<div class="row align-items-center">
-					<div class="col-sm-12 col-lg-5">
-						<p class="section-desc">As a responsible company, we maintain sustainable, long-term
+					<div class="col-sm-12 col-lg-5 sz">
+						<p class="section-desc-small">As a responsible company, we maintain sustainable, long-term
 							cooperation. Our goal is to launch high-quality tech products that meet the needs of your
 							users and can scale at the same pace as your business will grow</p>
 					</div>
-					<div class="col d-none d-lg-block">
-						<div class="tar">
-							<img src="./assets/images/cube.png" alt="" class="animaytion-rotate">
-							<img src="./assets/images/Blue-ball.png" alt="" class="animaytion-rotate">
-							<img src="./assets/svg/half-circle.svg" alt="" class="animaytion-rotate">
+					<div class="col d-none d-lg-block sz">
+						<div class="tar position-relative">
+							<img src="./assets/images/cube.png" alt="" class="animaytion-cube" style="left:0">
+							<div class="blue-ball animaytion-ball d-none d-md-block w-100" style="left:0">
+								<img src="./assets/svg/Blue-ball.svg" alt="" class="animaytion-ball" style="left:0">
+							</div>
+							<img src="./assets/svg/half-circle.svg" alt="" class="animaytion-ball" style="left:0">
 							<!-- <img src="./assets/images/half-ellipse.png" alt="" class="animaytion-rotate"> -->
 						</div>
 					</div>
@@ -130,9 +129,9 @@
 						<div class="tal"><img src="./assets/images/About-us-woman.png" alt=""></div>
 					</div>
 					<div class="col-sm-12 col-lg-5">
-						<p class="section-desc mb-96">We believe that there is an effective team behind every great
+						<p class="section-desc-small mb-96">We believe that there is an effective team behind every great
 							product</p>
-						<p class="section-desc">Our engineers are geared to help you with your Web and Mobile
+						<p class="section-desc-small">Our engineers are geared to help you with your Web and Mobile
 							development through a proven cost-saving outsourcing model</p>
 					</div>
 				</div>
@@ -142,7 +141,7 @@
 		<section class="section stacks mb-56">
 			<div class="main-container">
 				<h2 class="section-title mb-56">Suitable stack technologies <br>for your project</h2>
-				<div class="stack d-none d-lg-block">
+				<div class="stack d-none d-md-block">
 					<div class="row">
 						<div class="col-auto">
 							<div class="df fdc h-100 justify-content-between">
@@ -222,7 +221,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="stack d-block d-lg-none">
+				<div class="stack d-block d-md-none">
 					<div class="row g-2">
 						<div class="col-6">
 							<div class="item-of-stack">Mobile<br> Development</div>
@@ -273,23 +272,23 @@
 				</div>
 				<div class="sphere mb-80">
 					<div class="d-flex row justify-content-between gy-4">
-						<div class=" col-lg-3 tac sphere-item">
+						<div class="col-sm-6 col-lg-3 tac sphere-item">
 							<div>
 								<h3 class="sphere-title mb-24">Medicine</h3>
 								<img src="./assets/svg/Medecine.svg" alt="">
 							</div>
 						</div>
-						<div class=" col-lg-3 tac sphere-item">
+						<div class="col-sm-6 col-lg-3 tac sphere-item">
 							<div>
 								<h3 class="sphere-title mb-24">E-commerce</h3>
 								<img src="./assets/svg/E-commerce.svg" alt="">
 							</div>
 						</div>
-						<div class="col-lg-3 tac sphere-item">
+						<div class="col-sm-6 col-lg-3 tac sphere-item">
 							<h3 class="sphere-title mb-24">Entertainment</h3>
 							<img src="./assets/svg/Entertainment.svg" alt="">
 						</div>
-						<div class="col-lg-3 tac sphere-item">
+						<div class="col-sm-6 col-lg-3 tac sphere-item">
 							<h3 class="sphere-title mb-24">Fintech</h3>
 							<img src="./assets/svg/Fintech.svg" alt="">
 						</div>
@@ -298,7 +297,7 @@
 				</div>
 				<div class="row align-items-center">
 					<div class="col-sm-12 col-lg-5">
-						<p class="section-desc">We have developed more than 300 projects with companies in the fields of
+						<p class="section-desc-small">We have developed more than 300 projects with companies in the fields of
 							healthtech, logistics, fintech, e-commerce, education, finance, foodtech, games and
 							entertainment</p>
 					</div>
